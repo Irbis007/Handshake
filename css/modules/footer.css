@@ -1,0 +1,112 @@
+.footer{
+    padding: 80px 0 20px 0;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-nav{
+    width: max-content;
+}
+.footer .footer-nav .nav-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--text-size-16);
+    font-weight: 700;
+}
+
+.footer .footer-nav .nav-body .list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 32px;
+}
+
+.footer .footer-nav .nav-body .list .item .link{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: var(--text-color-300);
+    font-size: var(--text-size-14);
+}
+.footer .footer-nav .nav-body .list .item .link:hover{
+    text-decoration: underline;
+}
+
+
+
+.footer .subfooter hr{
+   margin-bottom: 20px;
+   margin-top: 80px;
+}
+
+.footer .footer-nav .nav-body.nav-body-active{
+    display: block;
+}
+
+.footer .subfooter .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .subfooter .subfooter-link{
+    display: flex;
+    gap: 10px;
+}
+
+.footer .subfooter .socials{
+    display: flex;
+    gap: 20px;
+}
+
+.footer .subfooter .subfooter-link a{
+    color: var(--text-color-300);
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+@media (max-width:910px) {
+    .footer .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .logo-section .footer-stores{
+        display: none;
+    }
+    .footer .footer-nav .nav-body{
+        display: none;
+    }
+    .footer .footer-nav{
+        border-bottom: 1px solid #000;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .footer .footer-nav:nth-child(2){
+        border-top: 1px solid #000;
+    }
+    .footer .footer-nav:hover{
+       background-color: var(--bg-color-700);
+    }
+    
+}
+
+@media (max-width:685px) {
+    .footer .subfooter .container{
+        display: block;
+    }
+    .footer .subfooter .subfooter-link{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer .subfooter .subfooter-link a{
+        font-size: var(--text-size-14);
+    }
+    .footer .subfooter .socials{
+        justify-content: center;
+        margin-top: 15px;
+    }
+}

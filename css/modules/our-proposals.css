@@ -1,0 +1,65 @@
+.our-proposals{
+    padding: 110px 0;
+}
+
+.our-proposals .proposals-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--text-size-40);
+    max-width: 422px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 120%;
+    margin: 0 auto;
+}
+
+.our-proposals .proposals-descr{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--text-size-22);
+    line-height: 145%;
+    text-align: center;
+    margin-top: 53px;
+}
+
+.our-proposals .proposals{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, 420px);
+    margin-top: 80px;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.our-proposals .proposals .proposal{
+    text-align: center;
+}
+
+.our-proposals .proposals .proposal .proposal-title{
+    font-size: var(--text-size-22);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.our-proposals .proposals .proposal .proposal-descr{
+    font-size: var(--text-size-18);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+
+.our-proposals .proposals-button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+@media (max-width: 576px) {
+    .our-proposals .proposals{
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+    .our-proposals .proposals-title{
+        font-size: var(--text-size-32);
+    }
+    .our-proposals .proposals-descr{
+        font-size: var(--text-size-16);
+    }
+    
+}

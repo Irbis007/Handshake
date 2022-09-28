@@ -1,0 +1,42 @@
+.third-section{
+    background-color: var(--bg-color-1100);
+    padding: 111px 0;
+}
+
+.third-section .third-section-title{
+    font-size: var(--text-size-40);
+    font-family: 'Roboto', sans-serif;
+    line-height: 120%;
+    max-width: 441px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+}
+
+.third-section .third-section-descr{
+    max-width: 647px;
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 41px;
+    font-size: var(--text-size-22);
+}
+
+.third-section .third-section-button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+@media (max-width: 576px) {
+    .third-section .third-section-title{
+        font-size: var(--text-size-27);
+    }
+    .third-section .third-section-descr{
+        font-size: var(--text-size-18);
+    }
+    
+}

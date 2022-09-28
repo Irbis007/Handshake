@@ -1,0 +1,49 @@
+@import url('modules/fonts.css');
+@import url('modules/footer.css');
+@import url('modules/header.css');
+@import url('modules/vars.css');
+@import url('modules/reboot.css');
+@import url('modules/see-role.css');
+@import url('modules/intro.css');
+@import url('modules/our-proposals.css');
+@import url('modules/second-section.css');
+@import url('modules/employers.css');
+@import url('modules/third-section.css');
+@import url('modules/fourth-section.css');
+@import url('modules//fifth-section.css');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color-900);
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.button{
+    font-family: 'Roboto', sans-serif;
+    padding: 16px 24px;
+    background-color: var(--bg-color-600);
+    border: none;
+    border-radius: 3px;
+    color: var(--text-color-100);
+    width: max-content;
+    transition: all .1s;
+}
+.button:hover{
+    cursor: pointer;
+    background-color:var(--bg-color-300);
+}
+
+@media (max-width: 576px) {
+    .button{
+        padding: 11px 19px;
+    }
+    
+}

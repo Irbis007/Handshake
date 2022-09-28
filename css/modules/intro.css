@@ -1,0 +1,65 @@
+.intro{
+    background: url('../../img/intro.jpg') center center / cover no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+
+.intro .container{
+    position: relative;
+    padding: 41px 0;
+    height: 100%;
+}
+
+.intro .intro-title{
+    font-weight: 700;
+    max-width: 488px;
+    font-size: var(--text-size-40);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 120%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro .intro-subtitle{
+    font-size: var(--text-size-27);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 12px;
+}
+
+.intro .intro-form{
+    position: absolute;
+    bottom: 41px;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.intro .intro-form .form-input{ 
+    width: 340px;
+    height: 46px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 22px;
+}
+
+@media (max-width: 576px) {
+    .intro .intro-form{
+        gap: 16px;
+    }
+    .intro .intro-form .form-input{
+        width: 200px;
+        height: 32px;
+        font-size: var(--text-size-11);
+    }
+    .intro .intro-title{
+        font-size: var(--text-size-32);
+    }
+    .intro .intro-subtitle{
+        font-size: var(--text-size-23);
+    }
+    
+}
